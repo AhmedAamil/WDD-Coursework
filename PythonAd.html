@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Python Additional Page | CODE HIVE</title>
+        <link rel="stylesheet" href="./CSS/Style.css">
+        <link rel="stylesheet" href="./CSS/PythonAd.css">
+
+        <script>
+            topButton = document.getElementById('top');
+			window.onscroll= function() {scrollFunction()};
+			function scrollFunction(){
+				if (document.body.scrollTOp >400 || document.documentElement.scrollTop > 400){
+					topButton.style.display= "block";
+				}
+				else{
+					topButton.style.display = "none";
+				}
+			}
+			function topFuntion(){
+				document.documentElement.scrollTop= 0; 
+			}
+        </script>
+    </head>
+
+    <body>
+        <header> <!--Navbar and logo-->
+            <a href="Home.html" ><img id="logo" src="./Images/NavLogo.png" alt="CodeHive Logo"></a> 
+            <nav>
+                <ul id="navigation">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="#Gallery.html">Gallery</a></li>
+                    <li><a href="#Quiz.html">Quiz</a></li>
+                    <li><a href="Product.html">Store</a></li>
+                    <li><a href="#Sitemap.html">Site Map</a></li>
+                    <li><a href="#Form.html">Query</a></li>
+                    <li><a href="#StudentDetails.html">About Us</a></li> 
+                </ul>
+            </nav>
+        </header>
+
+        <div>
+            <img class="python-image" src="./Images/Python.jpg" alt="Python Background" width="900">
+            <h1 class="python-header">PYTHON</h1>
+        </div>
+        
+        <div id="link">
+            <h2 style="font-weight: bold;"><strong>CONTENTS</strong></h2>
+            <a href="#intro">INTRODUCTION</a><br>
+            <a href="#careers">CAREERS</a><br>
+            <a href="#advantages">ADVANTAGES</a><br>
+            <a href="#future">FUTURE</a><br>
+            <a href="#courses">COURSES</a>
+        </div>
+
+        <main>
+            <div class="content-container">
+                <div class="content" id="intro">
+                    <fieldset><legend>Introduction</legend></fieldset>
+                    <p>
+                    Python is a high-level, interpreted programming language that has become extremely popular in recent years because of how straightforward,
+                    adaptable, and simple it is to use. Guido van Rossum first made it available in 1991, and since then it has grown to be one of the most popular
+                    programming languages in the entire world. Python is a powerful language that can be used for a variety of applications. Its syntax is designed to be simple to read and write, making it a great choice for beginners.
+                    Python is a strong and adaptable language that can be used in a variety of contexts thanks to its expansive standard library, third-party libraries, and community support. 
+                    </p>
+                </div>
+                
+                <div class="content" id="careers">
+                    <fieldset><legend>Careers Associated With Python</legend></fieldset>
+                    <p>
+                    There are many careers associated with Python.
+                    Python is frequently used for software development, and many businesses demand Python-savvy developers, and it's 
+                    well-liked language for data science and machine learning, so many data scientists use it to analyze and work with data. 
+                    Python has a large library and framework ecosystem. Therefore,It's is a useful language for DevOps engineers because 
+                    it is frequently used for automation and scripting in this field. Python is a popular programming language for web developers
+                    because it is used to create web applications, and it's frequently used in scientific research for modeling and data analysis, so scientists who use Python are highly prized.
+                    </p>
+                </div>
+
+                <div class="content" id="advantages">
+                    <fieldset><legend>Benefits of Learning Python</legend></fieldset> 
+                    <p>
+                    Python is a beneficial language to learn because of its many advantages. First of all, Python is simple to learn and use, 
+                    allowing beginners to get into programming right away. Second, Python's syntax is easy to read and understand, making it 
+                    accessible to people who aren't programmers. Thirdly, Python is a flexible language that can be used for a variety of 
+                    applications thanks to the large developer community that has produced numerous libraries and frameworks.
+                    Fourth, knowing Python can lead to a variety of career opportunities because it is used in so many industries,
+                    including data science, machine learning, web development, scientific research, and more. Finally, 
+                    Python knowledge can boost your earning potential because it is a skill that employers value highly.
+                    </p>
+                </div>
+                
+                <div class="content" id="future">
+                    <fieldset><legend>Future of Python</legend></fieldset>
+                    <p>
+                    Python's utilization and popularity are expected to continue to rise in the coming years, giving the language a bright future. 
+                    Python is a well-liked language in many industries, including data science, machine learning, web development, and scientific 
+                    research, thanks to its adaptability and simplicity of use. The need for Python developers is likely to grow as more businesses 
+                    and organizations choose to use Python for their projects. In addition, the Python community is consistently creating new 
+                    frameworks and libraries to make the language even more robust and versatile, which is likely to keep luring developers to it. 
+                    Last but not least, even though Python is open-source, it will continue to develop and get better over time, ensuring that it is 
+                    useful and relevant for many years to come.
+                    </p>
+                </div>
+            
+                <div class="content" id="courses">
+                    <fieldset><legend>For Free Courses : </legend></fieldset><br>
+                    <ul>
+                        <li><a href="https://www.simplilearn.com/learn-python-basics-free-course-skillup">Python for Beginners by SimpliLearn</a></li>
+                        <li><a href="https://www.udacity.com/course/introduction-to-python--ud1110">Introduction to Python Programming by Udacity</a></li>
+                        <li><a href="https://www.freecodecamp.org/news/python-programming-course/">Python Programming Course by  FreeCodeCamp</a></li>
+                        <li><a href="https://www.udemy.com/course/free-python/">Python for Absolute Beginners by Udemy</a></li>
+                    </ul>   
+                    <h3 style="font-weight: bold;">For Premium Courses And Books, Checkout <a href="store.html">The CODEHIVE STORE</a></h3>
+                </div>
+
+                <div class="back-to-top">
+                    <a id="top" class="top" href="#"> <b>TOP</b> </a>
+                </div>
+            </div>    
+        </main>    
+        <footer class="footer"><br>
+            <div class="footer-bottom">Page Editor | <a href="PageEditor.html"> Aamil Aliyar</a></div>
+        </footer>
+    </body>
+
+</html>

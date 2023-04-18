@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+body {
+    background-color: #141414;
+    padding-top: 5px;
+}
+
+:target:before {
+    content: "";
+    display: block;
+    height: 90px;
+    margin: -45px 0 0;
+}
+
+h1{
+    color:#fff;
+    text-align: center;
+    margin-top: 0.80cm;
+    margin-bottom: 30px;
+}
+
+#link {
+    position:absolute;
+    font-size: 16px;
+    height: 340px;
+    top: 220px;
+    left: 950px;
+    width: 350px;
+    border-width: 2px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to top left, #7108d4, #9c08d4);
+    text-align: center;
+    justify-content: center;
+    align-items: justify;
+    display: grid;
+    color: white;
+}
+
+#link h2{
+    font-family:'Montserrat', sans-serif;
+    font-size: xx-large;
+    margin-top: 5px;
+}
+
+#link a{
+    font-family:'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f0f0f0;
+    text-shadow: #000;
+}
+
+#link:hover {
+    color: #141414;
+    transition: 0.2s ease;
+    transform: translateY(-12px);   
+}
+
+.python-header {
+    position: absolute;
+    font-family: sans-serif;
+    top: 38%;
+    left: 47%;
+    letter-spacing: 9px;
+    transform: translate(-80%);
+    color: #fff;
+    font-size: 180px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.python-image {
+    position: relative;
+    padding-top:6%;
+    filter: brightness(0.3);
+}
+
+fieldset{
+    border: none;
+    margin-left: -15px;
+}
+legend {
+    font-family:'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align:left;
+    font-size: 24px;
+    color: #7108d4;
+}
+
+/* Additional Page */
+
+.content-container{
+    color: white;
+}
+
+.content-container p{
+    text-align: justify;
+    text-justify: inter-word;
+} 
+
+.content-container .content{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+
+.content-container legend{
+    font-size: 35px;
+}
+
+.content-container .back-to-top{
+    position: fixed;
+    background-color: #7108d4;
+    color: #fff;
+    bottom: 13px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius:15px;
+    font-size: 15px;
+    right: 25px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+    
+.content-container .back-to-top a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#courses a:hover{
+    transition: 0.5s;
+    color: #7108d4;
+}
+
+
+

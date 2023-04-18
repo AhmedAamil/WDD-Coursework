@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title> Store | CODEHIVE</title>
+	<script src="./JS/Product.js"></script>
+	<link rel="stylesheet" href="./CSS/Style.css">
+	<link rel="stylesheet" href="./CSS/Product.css">
+	<script>
+		// JavaScript for Bottom to Top button
+		topButton = document.getElementById('top');
+		window.onscroll= functi/n();{scrollFunction()};
+		function scrollFunction(){
+			if (document.body.scrollTOp >400 || document.documentElement.scrollTop > 400){
+				topButton.style.display= "block";
+			}
+			else{
+				topButton.style.display = "none";
+			}
+		}
+		function topFuntion(){
+			document.documentElement.scrollTop= 0; 
+		}
+	</script>
+</head>
+<body>
+	<header> <!--Navbar and logo-->
+		<a href="Home.html" ><img id="logo" src="./Images/NavLogo.png" alt="CODEHIVE Logo"></a> 
+		<nav>
+			<ul id="navigation">
+				<li><a href="#Home.html">Home</a></li>
+				<li><a href="#Gallery.html">Gallery</a></li>
+				<li><a href="#Quiz.html">Quiz</a></li>
+				<li><a href="Product.html">Store</a></li>
+				<li><a href="#SiteMap.html">Site Map</a></li>
+				<li><a href="#Form.html">Query</a></li>
+				<li><a href="#StudentDetails.html">About Us</a></li> 
+			</ul>
+		</nav>
+	</header>
+	<br>
+	<br>
+	<h1>CODEHIVE STORE</h1>
+	
+	<div id="Courses">
+		<legend><b>Buy Online Courses</b></legend>
+		<ul>
+			<li>
+				<img src="./Images/ProgrammingPrinciples.jpg" alt="Product 2">
+				<h3>Programming Principles</h3>
+				<p>STARTING AT &#x24; 90</p>
+				<button class="startLearning"  id="Product1" onclick="addToCartWithout('Programming Principles', 90); ">Start Learning</button>
+			</li>
+			<li>
+				<img src="./Images/FullStackSoftwareDevelopment.jpg" alt="Product 2">
+				<h3>Full Stack Software Development</h3>
+				<p>STARTING AT &#x24; 150</p>
+				<button class="startLearning"  id="Product2" onclick="addToCartWithout('Full Stack Software Development', 150); ">Start Learning</button>
+			</li>
+			<li>
+				<img src="./Images/UIUXDesignSpecialization.jpg" alt="Product 2">
+				<h3>UI/UX Design Specialization</h3>
+				<p>STARTING AT &#x24; 100</p>
+				<button class="startLearning"  id="Product3" onclick="addToCartWithout('UI/UX Design Specialization', 100);">Start Learning</button>
+			</li>
+		</ul>
+	</div>
+	<br>
+	<div id="Books">
+		<legend><b>Buy Books</b></legend>
+		<ul>
+			<li id="Book1">
+				<img id="Python" src="./Images/PythonforKids.png" alt="Product 1">
+				<h3>Python for Kids to Code</h3>
+				<p>PRICE: &#x24; 200</p>
+				<label>Quantity</label>
+				<input type="number" value="0" min="0" max="20" class="quantity1">
+				<button onclick="addToCart('Python for Kids to Code', 200)">Add to Cart</button>
+			</li>
+			<li id="Book2">
+				<img src="./Images/AcetheDataScienceInterview.png" alt="Product 2">
+				<h3>Ace the Data Science Interview</h3>
+				<p>PRICE: &#x24; 300</p>
+				<label>Quantity</label>
+				<input type="number" value="0" min="0" max="20" class="quantity2">
+				<button onclick="addToCart('Ace the Data Science Interview', 300)">Add to Cart</button>
+			</li>
+			<li id="Book3">
+				<img src="./Images/Don'tMakeMeThink.jpg" alt="Product 2">
+				<h3>Don't Make Me Think</h3>
+				<p>PRICE: &#x24; 250</p>
+				<label>Quantity</label>
+				<input type="number" value="0" min="0" max="20" class="quantity3">
+				<button onclick="addToCart(`Don't Make Me Think`, 250)">Add to Cart</button>
+			</li>
+		</ul>
+	</div>
+	<br>
+
+	<form id="User">
+		<fieldset>
+			<legend><b>Customer Information</b></legend>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			
+			<label for="email">Contact:</label>
+			<input type="email" id="email" name="email" required>
+			
+			<label for="fastDelivery">ExpressDelivery:</label>
+			<input type="checkbox" id="ExpressDelivery" name="fastDelivery" onchange="expressChecked()"><br><br>
+		</fieldset>
+	</form>
+
+	<div id="cart">
+		<legend><b>Your Order</b></legend>
+		<ul id="cartList"></ul>
+		<ul id="cartListwithout"></ul>
+        <div id="express"></div>
+		<div id="total"></div>
+		<div id="cart_button">
+			<button onclick="clearCart()">Clear Your Order</button>
+			<button onclick="checkout()">Place Your Order</button>
+		</div>
+	</div>
+	<br>
+
+	<!-- Back to Top -->
+	<div class="back-to-top">
+		<a id="top" class="top" href="#"> <b>TOP</b> </a>
+	</div>
+	<footer class="footer"><br>
+		<div class="footer-bottom">Page Editor | <a href="PageEditor.html"> Aamil Aliyar</a></div>
+	</footer>
+</body>
+
+</html>

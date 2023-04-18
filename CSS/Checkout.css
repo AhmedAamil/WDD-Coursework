@@ -1,0 +1,215 @@
+* {
+  box-sizing:content-box;
+  padding: 0;
+}
+  body {
+    background-color: #1b1b1b;
+    font-family: 'Montserrat', Open Sans;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+/* Cart */
+#cartList,
+#cartListwithout {
+   list-style: none;
+}
+  
+#cartList li,
+#cartListwithout li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding: 5px 20px; 
+}
+  
+#cartList li:last-child,
+#cartListwithout li:last-child {
+  margin-bottom: 20px;
+}
+
+#cartList li span,
+#cartListwithout li span {
+  font-weight: bold;
+}
+
+/* Shipping Details */
+.form {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-control input[type="text"],
+.form-control input[type="email"],
+.form-control input[type="number"],
+.form-control input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: #383838;
+  color: #fff;
+  font-size: 16px;
+  border-color:#9d40f5 ;
+}
+
+.form-control input[type="text"]:focus,
+.form-control input[type="email"]:focus,
+.form-control input[type="number"]:focus,
+.form-control input[type="date"]:focus {
+  outline: 3px solid #9d40f5;
+}
+
+/* Payment Details */
+.form h2:last-child {
+  margin-top: 20px;
+}
+
+.pay button {
+  background-color: #9d40f5;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.pay:hover {
+  background-color: #7108d4;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+display: none;
+}
+
+.container {
+  background-color: #181818;
+  border-radius: 7px;
+  overflow: hidden;
+  width: 500px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 18px;
+}
+
+h2 {
+  color: #7108d4;
+  margin-bottom: 25px;
+}
+
+h3, #order{
+  margin-top: 5px;
+  padding: 5px 18px;
+}
+
+#express{
+margin-bottom: 5px;
+padding: 5px 18px;
+}
+
+#total{
+  padding: 5px 20px;
+  font-weight: bolder;
+  color: #7108d4
+}
+
+.form {
+  padding: 10px 15px;	
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 25px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 7px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+
+
+
+.form-control.error input {
+border-color: #e74c3c !important;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71 !important;
+  visibility: visible !important;
+  border-color: rgb(51, 195, 51);
+  
+  
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c !important;
+  visibility: visible !important;
+}
+
+.form-control small {
+  color: #e73f3c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible !important;
+}
+
+.form button {
+  background-color: #7108d4;
+  border: 2px solid  #9d40f5;
+  border-radius: 7px;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+  border: none;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.form button:hover{
+  background-color: #9d40f5;
+}

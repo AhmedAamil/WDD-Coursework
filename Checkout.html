@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Checkout Page</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="./CSS/Style.css">
+		<link rel="stylesheet" href="./CSS/Checkout.css">
+		<script src="./JS/Checkout.js"></script>
+	</head>
+	
+	<body >
+		<header> <!--Navbar and logo-->
+			<a href="Home.html" ><img id="logo" src="./Images/NavLogo.png" alt="CODEHIVE Logo"></a> 
+			<nav>
+				<ul id="navigation">
+					<li><a href="#Home.html">Home</a></li>
+					<li><a href="#Gallery.html">Gallery</a></li>
+					<li><a href="#Quiz.html">Quiz</a></li>
+					<li><a href="#Product.html">Store</a></li>
+					<li><a href="#Sitemap.html">Site Map</a></li>
+					<li><a href="#Form.html">Query</a></li>
+					<li><a href="#StudentDetails.html">About Us</a></li> 
+				</ul>
+			</nav>
+		</header>
+		<br>
+		<br>
+		<br>
+		<br>
+	<div id="load" class="container">	
+		<!-- Cart -->
+		<span>
+		<h2 id="order">Order Summary</h2>
+		<ul id="cartList"></ul>
+		</span>
+		<div id="express"></div>
+		<h3>Total price</h3> <div id="total"></div>
+		<ul id="cartListwithout"></ul>
+		<!-- Details -->
+		<form id="form" class="form">
+			<h2>Shipping Details</h2> <br>
+			<div class="form-control">
+				<label for="username">Name</label>
+				<input type="text" placeholder="John Doe" id="name" />
+				<i class="fas fa-check-circle"></i>
+				<i class="fas fa-exclamation-circle"></i>
+				<small>Error message</small>
+			</div>
+			<div class="form-control">
+				<label for="username">Email Address</label>
+				<input type="email" placeholder="Name@email.com" id="email" />
+				<i class="fas fa-check-circle"></i>
+				<i class="fas fa-exclamation-circle"></i>
+				<small>Error message</small>
+			</div>
+			<div class="form-control">
+				<label for="username">Address</label>
+				<input type="text" placeholder="1234 NW Bobcat Lane, California" id="address" />
+				<i class="fas fa-check-circle"></i>
+				<i class="fas fa-exclamation-circle"></i>
+				<small>Error message</small>
+			</div>
+			<div class="form-control">
+				<label for="username">Zip code</label>
+				<input type="number" placeholder="0000" id="zip"/>
+				<i class="fas fa-check-circle"></i>
+				<i class="fas fa-exclamation-circle"></i>
+				<small>Error message</small>
+			</div>
+			<h2>Payment Details</h2><br>
+			<div class="form-control">
+				<label for="username">Card Name</label>
+				<input type="text" placeholder="D. John" id="cname" />
+				<i class="fas fa-check-circle"></i>
+				<i class="fas fa-exclamation-circle"></i>
+				<small>Error message</small>
+			</div>
+			<div class="form-control">
+				<label for="username">Card Number</label>
+				<input type="number" placeholder="1111-2222-3333-4444" id="cnum"/>
+				<i class="fas fa-check-circle"></i>
+				<i class="fas fa-exclamation-circle"></i>
+				<small>Error message</small>
+			</div>
+			<div class="form-control">
+				<label for="username">Exp Date</label>
+				<input type="date" placeholder="31/03" id="expdate" />
+				<i class="fas fa-check-circle"></i>
+				<i class="fas fa-exclamation-circle"></i>
+				<small>Error message</small>
+			</div>
+			<div class="form-control">
+				<label for="username">CVV</label>
+				<input type="number" placeholder="0000" id="cvv"/>
+				<i class="fas fa-check-circle"></i>
+				<i class="fas fa-exclamation-circle"></i>
+				<small>Error message</small>
+			</div>
+			<Button  id="submit" class="pay">Make Payment</Button>
+		</form>
+		<br>
+		<br>
+	</div>
+	<br>
+	<br>
+	<footer class="footer"><br>
+		<div class="footer-bottom">Page Editor | <a href="PageEditor.html"> Aamil Aliyar</a></div>
+	</footer>
+	</body>
+</html>
