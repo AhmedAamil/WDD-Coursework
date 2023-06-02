@@ -12,4 +12,4 @@ Read the above [Coursework Specification](https://github.com/AhmedAamil/WDD-Cour
 Possible subjects include:
 Sports, Music, Tourism, Art, Entertainment, Education, Science
 
-© Copyright Informatics Institute of Technology 2023
+Copyright © 2023 Informatics Institute of Technology. All Rights Reserved
